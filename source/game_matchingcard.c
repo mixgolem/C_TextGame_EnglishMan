@@ -1,6 +1,6 @@
 //카드뒤집기 미니게임 소스코드
 
-#include "헤더.h"
+#include "header.h"
 #define CARD 14
 int choicecard[CARD];//플레이어가 맞힐카드
 int cardopen[CARD]; // 오픈될카드

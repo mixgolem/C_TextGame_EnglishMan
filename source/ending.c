@@ -1,6 +1,6 @@
 //엔딩과 관련된 함수들 소스코드
 
-#include "헤더.h"
+#include "header.h"
 
 void end_print_clear()	//게임 클리어시 시각적 효과
 {

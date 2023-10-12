@@ -1,6 +1,6 @@
 //인디언 포커 소스코드
 
-#include "헤더.h"
+#include "header.h"
 
 //카드 구조체 선언. 카드는 문양과 숫자가 같이 있음
 typedef struct card {

@@ -1,6 +1,6 @@
 ﻿//팔씨름 미니게임
 
-#include "헤더.h"
+#include "header.h"
 
 int game_armwrestle(player* a)
 {

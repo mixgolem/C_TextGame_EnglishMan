@@ -1,33 +1,33 @@
-//°ÔÀÓÀÇ ¸ÞÀÎ ¼Ò½ºÄÚµå
+//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ò½ï¿½ï¿½Úµï¿½
 
-#include "Çì´õ.h"
+#include "header.h"
 
 int main()
 {
-	system("mode con cols=120 lines=50");//cmdÃ¢ÀÇ Å©±â Á¶Àý
+	system("mode con cols=120 lines=50");//cmdÃ¢ï¿½ï¿½ Å©ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 
-	player son = { 2, 1000, 10, 0, 10 };//Ä³¸¯ÅÍ ¹øÈ£, °ñµå, Ã¼·Â, ¹ÎÃ¸, Èû ¼ø¼­
-	player* a = NULL;//Ä³¸¯ÅÍ Æ÷ÀÎÅÍ ¼±¾ð
-	a = &son;//Ä³¸¯ÅÍ ¼±¾ð
+	player son = { 2, 1000, 10, 0, 10 };//Ä³ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½È£, ï¿½ï¿½ï¿½, Ã¼ï¿½ï¿½, ï¿½ï¿½Ã¸, ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+	player* a = NULL;//Ä³ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+	a = &son;//Ä³ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 
-	int eventcount = 0;//ÀÌº¥Æ® ¸î¹ø ÁøÇàÇß´ÂÁö Ä«¿îÆ®
+	int eventcount = 0;//ï¿½Ìºï¿½Æ® ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ß´ï¿½ï¿½ï¿½ Ä«ï¿½ï¿½Æ®
 	int ran[COUNT_EVENT] = { COUNT_EVENT + 1, };
-	sys_random_event_occur(ran);//ÀÌº¥Æ® ¼ø¼­ ·£´ýÀ¸·Î ¸¸µé¾î¼­ ran¹è¿­¿¡ ÀúÀå
+	sys_random_event_occur(ran);//ï¿½Ìºï¿½Æ® ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½î¼­ ranï¿½è¿­ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 	
 	system("cls");
 
 
-	//°ÔÀÓ ½ÃÀÛ ÇÔ¼ö
+	//ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ô¼ï¿½
 	sys_opening();
-	//Ä³¸¯ÅÍ ¼±ÅÃ ÇÔ¼ö
+	//Ä³ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ô¼ï¿½
 	sys_selectplayer(a);
-	//Æ©Åä¸®¾ó ½ÇÇà
+	//Æ©ï¿½ä¸®ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 	sys_tutorial(a);
 
 	
-	//·çÇÁ ½ÇÇà
+	//ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 	while (1) {
-		eventcount = sys_playevent(eventcount, ran, a);//playeventÇÔ¼ö ÇÑ¹ø ½ÇÇà ½Ã ÀÌº¥Æ® ÇÑ°³¾¿ ½ÇÇàµÊ
+		eventcount = sys_playevent(eventcount, ran, a);//playeventï¿½Ô¼ï¿½ ï¿½Ñ¹ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½Ìºï¿½Æ® ï¿½Ñ°ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½
 		eventcount = sys_playevent(eventcount, ran, a);
 		game_casino(a);
 		eventcount = sys_playevent(eventcount, ran, a);
@@ -41,7 +41,7 @@ int main()
 		eventcount = sys_playevent(eventcount, ran, a);
 		game_casino(a);
 
-		//ÇÑ ·çÇÁ Á¾·á ÈÄ ´Ù½Ã ÀÌº¥Æ®ÀÇ ¼ø¼­¸¦ ¹«ÀÛÀ§·Î ¹è¿­
+		//ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½Ù½ï¿½ ï¿½Ìºï¿½Æ®ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½è¿­
 		eventcount = 0;
 		memset(ran, COUNT_EVENT + 1, COUNT_EVENT);
 		sys_random_event_occur(ran);

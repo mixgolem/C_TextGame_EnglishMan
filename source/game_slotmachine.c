@@ -1,6 +1,6 @@
 //슬롯머신 미니게임 소스코드
 
-#include "헤더.h"
+#include "header.h"
 
 //당첨 사례와 사례 금액을 출력하는 함수
 void display_rule(void)

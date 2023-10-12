@@ -1,6 +1,6 @@
 //할리 갈리 소스코드
 
-#include "헤더.h"
+#include "header.h"
 
 typedef struct card {
 	int number;

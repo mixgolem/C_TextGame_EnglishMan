@@ -1,6 +1,6 @@
 //Visual C에서 게임의 틀을 구성하는 함수들 소스코드
 
-#include "헤더.h"
+#include "header.h"
 
 
 void sys_gotoxy(int x, int y)

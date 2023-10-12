@@ -1,6 +1,6 @@
 //카지노 입장 함수
 
-#include "헤더.h"
+#include "header.h"
 
 void game_casino(player* a) {
 	int sel1 = 0;
